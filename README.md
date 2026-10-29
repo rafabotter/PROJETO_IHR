@@ -173,7 +173,7 @@ O design prioriza uma aparência amigável, movimentos previsíveis e interfaces
 
 As dimensões, os mecanismos de locomoção e a capacidade de manipulação serão definidos conforme a evolução do projeto.
 
-<img alt="Protótipo do HYRO - V1" src="hyro_esboco_v1.png" height="380"/>
+<img alt="Protótipo do HYRO - V1" src="esboçohyro.png" height="380"/>
 
 ## Ações do robô
 
