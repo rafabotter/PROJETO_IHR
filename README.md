@@ -13,7 +13,7 @@ Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário 
 
 ## Resumo
 
-> O HYRO é um robô de assistência doméstica com estrutura humanoide e rodas nas extremidades das pernas, projetado para auxiliar pessoas com dificuldades na realização de atividades cotidianas, especialmente idosos e pessoas com mobilidade reduzida. Seu diferencial está na combinação de mobilidade, interação por voz e assistência personalizada, permitindo buscar e transportar objetos, oferecer companhia por meio de conversas e disponibilizar uma função de contato de emergência para acionar familiares ou serviços de assistência quando necessário. O HYRO busca proporcionar maior autonomia, segurança e conforto aos usuários, tornando o ambiente doméstico mais acessível e promovendo uma interação intuitiva e acolhedora entre humanos e robôs.
+O HYRO é um robô de assistência doméstica com estrutura humanoide e rodas nas extremidades das pernas, projetado para auxiliar pessoas com dificuldades na realização de atividades cotidianas, especialmente idosos e pessoas com mobilidade reduzida. Seu diferencial está na combinação de mobilidade, interação por voz e assistência personalizada, permitindo buscar e transportar objetos, oferecer companhia por meio de conversas e disponibilizar uma função de contato de emergência para acionar familiares ou serviços de assistência quando necessário. O HYRO busca proporcionar maior autonomia, segurança e conforto aos usuários, tornando o ambiente doméstico mais acessível e promovendo uma interação intuitiva e acolhedora entre humanos e robôs.
 
 
 
@@ -30,67 +30,60 @@ O HYRO é um robô de assistência doméstica com estrutura humanoide e rodas na
 </details>
 
 ## Público-Alvo e Stakeholders
-
-> 💡
-> Determine o seu público alvo.
-
 ### Stakeholders
 
-> 💡
-> Identifique os **stakeholders** do projeto — todos os envolvidos e afetados pelo robô, mesmo sem interagir diretamente com ele:
-> - **Primários** — usam o robô diretamente.
-> - **Secundários** — têm contato intermitente com o robô ou interagem com ele por meio de um intermediário.
-> - **Terciários** — são afetados pelo robô (positiva ou negativamente) sem necessariamente interagir com ele.
-
-<details>
-<summary>📄</summary>
-
-- **Primários** — visitantes (futuros alunos e famílias) que pedem informações e são guiados pelo robô.
-- **Secundários** — recepcionistas e seguranças da portaria, que cruzam com o robô no saguão e ocasionalmente o auxiliam.
-- **Terciários** — coordenadores de curso, cujo número de inscrições pode ser afetado pela impressão (boa ou ruim) que o robô causa nos visitantes.
+- **Primários** — idosos e pessoas com mobilidade reduzida que utilizam o HYRO para buscar objetos, receber companhia e acionar contatos de emergência.
+- **Secundários** — familiares, cuidadores e profissionais de assistência, que podem acompanhar o usuário e receber solicitações de ajuda.
+- **Terciários** — demais moradores da residência, profissionais de saúde e serviços de emergência, que podem ser impactados pelo uso do robô e pelo acionamento de seus recursos.
 
 </details>
 
 ### Personas
 
-> 💡
-> - Descreva as personas que irão interagir com o robô. Deixe claro suas principais características e contextos sociais, econômicos e culturais.
-> - Quais informações sobre o usuário o robô deve saber antes de iniciar a tarefa?
+## Público-Alvo e Personas
 
-- Persona primária ...
-- Persona secundária ...
-- Outras personas ...
+- **Persona primária — Maria, 72 anos:** aposentada, mora sozinha e possui dificuldade de locomoção. Utiliza o celular para tarefas básicas, mas prefere comandos de voz por serem mais práticos. Busca ajuda para pegar objetos, ter companhia e contatar familiares em emergências.
 
-<details>
-<summary>📄</summary>
+- **Persona secundária — João, 45 anos:** filho de Maria, trabalha em período integral e se preocupa com a segurança e o bem-estar da mãe. Deseja que o HYRO ajude nas atividades cotidianas e facilite o contato em situações de emergência.
 
-- **Persona primária — Ana, 17 anos:** aluna do 3º ano do ensino médio, indecisa entre Engenharia de Robôs e Ciência da Computação, visita a FEI pela primeira vez acompanhada da mãe. Não sabe onde fica nenhum laboratório.
-- **Persona secundária — Sr. Carlos, 50 anos:** pai de Ana, mais cético em relação a tecnologia, preocupado com o custo do curso e a empregabilidade; tende a fazer perguntas objetivas e desconfia de recomendações "automáticas".
+- **Outras personas — Pessoas com mobilidade reduzida:** usuários de diferentes idades e contextos sociais que necessitam de auxílio em tarefas domésticas e valorizam autonomia, acessibilidade e segurança.
 
-</details>
+### Informações que o robô deve conhecer
+
+- Nome e preferências de comunicação do usuário.
+- Necessidades de acessibilidade e limitações de mobilidade relevantes para a interação.
+- Lista de contatos de emergência autorizados.
+- Preferências e comandos para as tarefas disponíveis.
+- Localização dos objetos e ambientes relevantes, quando necessário.
+
+Essas informações devem ser fornecidas ou autorizadas pelo usuário, respeitando sua privacidade e segurança.
 
 ### Mapa de empatia
 
 ![Mapa de empatia](empatia.png)
 
-> 💡
-> Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma secundária.
-> - O que o usuário vê: aqui estamos falando do ambiente visual em que o usuário se encontra. Ou seja, o que ele efetivamente enxerga, as pessoas e objetos que estão ao seu redor. Isso ajuda a entender o contexto em que o usuário está inserido e as influências visuais que está recebendo.
-> - O que o usuário ouve: neste quadrante, buscamos entender o que o usuário está ouvindo, os sons que o cercam e como eles influenciam suas ações.
-> - O que o usuário diz e faz: aqui consideramos ações e comportamentos que o usuário apresenta durante sua interação com o robô.
-> - O que o usuário pensa e sente: neste quadrante, buscamos entender os pensamentos, sentimentos, emoções e percepções que o usuário tem em relação robô. Quais expectativas o usuário cria sobre o robô? Que tipo de robô mais agrada essa persona?
-> - Dores: quando falamos sobre dores do usuário, estamos fazendo referência a quaisquer obstáculos, necessidades ou frustrações que o usuário possa experimentar ao tentar realizar uma tarefa ou alcançar um objetivo. Isso inclui, por exemplo, problemas de usabilidade, dificuldades de acesso ou outros desafios que podem afetar a experiência do usuário.
-> - Ganhos: nesse caso estamos falando de quaisquer benefícios ou recompensas que o usuário possa experimentar ao utilizar o robô. Isso pode incluir economia de tempo ou facilidade de uso, por exemplo. Que desejos do usuário o robô satisfaz?
 
 <details>
-<summary>📄 (persona: Ana)</summary>
+<summary>📄 Persona primária: Maria, 72 anos</summary>
 
-- **Vê:** banners coloridos, estudantes de jaleco, placas de curso, o robô Rumo se movendo pelo saguão.
-- **Ouve:** música ambiente do evento, outros visitantes conversando, um monitor anunciando horários de palestras.
-- **Diz e faz:** pergunta "onde fica o laboratório de robótica?", tira foto do robô, segue meio hesitante quando ele começa a andar.
-- **Pensa e sente:** ansiosa por decidir a faculdade certa, curiosa e um pouco encantada com o robô, insegura se vai dar conta do curso.
-- **Dores:** medo de escolher a faculdade errada; vergonha de fazer perguntas "óbvias" para um humano.
-- **Ganhos:** sente-se acolhida sem julgamento ao perguntar ao robô; economiza tempo achando o laboratório sozinha.
+- **Vê:** objetos fora de alcance, móveis e ambientes domésticos que exigem deslocamento.
+- **Ouve:** sons da casa, televisão e orientações do HYRO por voz.
+- **Diz e faz:** pede para o HYRO buscar objetos, conversa com ele e utiliza a função de contato de emergência quando necessário.
+- **Pensa e sente:** deseja manter sua independência, sentir-se segura e ter companhia no dia a dia.
+- **Dores:** dificuldade de locomoção, necessidade de ajuda em tarefas simples e receio de não conseguir pedir ajuda em uma emergência.
+- **Ganhos:** maior autonomia, praticidade, companhia e facilidade para contatar familiares.
+
+</details>
+
+<details>
+<summary>📄 Persona secundária: João, 45 anos</summary>
+
+- **Vê:** a rotina da mãe, suas dificuldades diárias e o HYRO auxiliando nas tarefas domésticas.
+- **Ouve:** relatos da mãe sobre o robô e recebe contatos quando ela precisa de ajuda.
+- **Diz e faz:** configura os contatos de emergência, ajuda na adaptação ao robô e verifica se ele atende às necessidades da mãe.
+- **Pensa e sente:** preocupa-se com a segurança e o bem-estar da mãe e busca soluções confiáveis para ajudá-la mesmo quando está ausente.
+- **Dores:** dificuldade de estar presente o tempo todo e preocupação com possíveis emergências.
+- **Ganhos:** maior tranquilidade, apoio à rotina da mãe e facilidade de comunicação em situações que exigem assistência.
 
 </details>
 
