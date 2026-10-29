@@ -165,20 +165,15 @@ A combinação desses padrões torna a interação mais previsível e acessível
 
 ### Protótipo no papel
 
-> 💡
-> Modele o seu robô com desenhos de formas primitivas (caixas, cilindros, esferas): forma, tamanho, rosto/olhos, partes móveis, tela. É o protótipo mais barato e rápido — lembre-se do lema "**teste cedo, teste sempre**".
->
+O HYRO possui uma estrutura humanoide composta por cabeça, tronco, braços articulados e pernas com rodas nas extremidades, combinando características humanas com mobilidade robótica. A cabeça contém olhos/sensores para percepção do ambiente, além de microfone e alto-falante para comunicação por voz.
 
-<details>
-<summary>📄</summary>
+O tronco poderá conter uma tela para exibir informações e um botão de emergência para facilitar o acionamento de ajuda. Os braços serão responsáveis por pegar e transportar objetos leves, enquanto as rodas permitirão o deslocamento pelos ambientes domésticos.
 
- Corpo afunilado sobre uma base omnidirecional (três rodas onidirecionais, em arranjo triangular); "cabeça" arredondada com dois olhos, uma antena/sensor no topo; tela na parte de cima do torso, com o nome do robô; sem braços — apenas um anel de luz na base para sinalizar status. Altura total ≈1,55 m; diâmetro da base ≈0,90 m.
+O design prioriza uma aparência amigável, movimentos previsíveis e interfaces acessíveis, buscando transmitir segurança e facilitar a interação com diferentes usuários.
 
-<img alt="Esboço do robô Rumo - V1'" src="rumo_esboco_v1.png" height="380"/>
-<img alt="Esboço do robô Rumo - V2'" src="rumo_esboco_v2.png" height="380"/>
-<img alt="Esboço do robô Rumo - V3'" src="rumo_esboco_v3.png" height="380"/>
+As dimensões, os mecanismos de locomoção e a capacidade de manipulação serão definidos conforme a evolução do projeto.
 
-</details>
+<img alt="Protótipo do HYRO - V1" src="hyro_esboco_v1.png" height="380"/>
 
 ## Ações do robô
 
