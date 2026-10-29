@@ -30,6 +30,9 @@ O HYRO é um robô de assistência doméstica com estrutura humanoide e rodas na
 </details>
 
 ## Público-Alvo e Stakeholders
+
+Idosos, pessoas com mobilidade reduzida e indivíduos com dificuldades para realizar tarefas cotidianas, que necessitam de auxílio, companhia e maior segurança no ambiente doméstico.
+
 ### Stakeholders
 
 - **Primários** — idosos e pessoas com mobilidade reduzida que utilizam o HYRO para buscar objetos, receber companhia e acionar contatos de emergência.
@@ -39,8 +42,6 @@ O HYRO é um robô de assistência doméstica com estrutura humanoide e rodas na
 </details>
 
 ### Personas
-
-## Público-Alvo e Personas
 
 - **Persona primária — Maria, 72 anos:** aposentada, mora sozinha e possui dificuldade de locomoção. Utiliza o celular para tarefas básicas, mas prefere comandos de voz por serem mais práticos. Busca ajuda para pegar objetos, ter companhia e contatar familiares em emergências.
 
@@ -60,7 +61,7 @@ Essas informações devem ser fornecidas ou autorizadas pelo usuário, respeitan
 
 ### Mapa de empatia
 
-![Mapa de empatia](empatia.png)
+![Mapa de empatia](
 
 
 <details>
