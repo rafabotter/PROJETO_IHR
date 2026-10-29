@@ -93,117 +93,75 @@ Essas informações devem ser fornecidas ou autorizadas pelo usuário, respeitan
 
 ## Contexto de uso
 
-> 💡
-> - Descreva o ambiente em que o robô interage com os usuários
-> - Qual/quais o(s) contexto(s) sociais, econômicos e culturais existentes neste ambiente?
-> - Quais informações sobre o ambiente o robô deve saber antes de iniciar a tarefa?
+O HYRO será utilizado principalmente em ambientes residenciais, como casas e apartamentos, compartilhados por pessoas com diferentes idades e necessidades. O ambiente pode apresentar móveis, corredores estreitos, objetos fora de alcance e obstáculos que dificultam a locomoção. O robô será especialmente útil para idosos e pessoas com mobilidade reduzida, mas poderá auxiliar outros moradores que necessitem de apoio em atividades cotidianas.
 
-<details>
-<summary>📄</summary>
+O contexto social envolve a convivência entre familiares, cuidadores e moradores, considerando também situações em que o usuário passa períodos sozinho. O HYRO deverá oferecer uma interação acessível por voz, respeitando diferentes níveis de familiaridade com a tecnologia e condições econômicas e culturais.
 
-Saguão de entrada e corredores do prédio principal da FEI, durante o FEI Portas Abertas (evento de um único dia, com alta lotação). O ambiente é barulhento e há vários grupos de visitantes circulando ao mesmo tempo, muitos acompanhados de monitores humanos. O robô precisa saber, antes de começar, o mapa dos laboratórios abertos naquele dia e quais estão temporariamente fechados.
-
-</details>
+Antes de iniciar uma tarefa, o robô deverá conhecer o mapa do ambiente, sua localização, os obstáculos e as áreas acessíveis, além das capacidades necessárias para executar a solicitação. Também deverá conhecer as preferências de interação do usuário e, caso a função de emergência esteja habilitada, os contatos previamente cadastrados e autorizados.
 
 ## Jornada do usuário
 
-> 💡
-> - Criar uma narrativa para o o seu robô e o usuário.
-> - Determine o passo a passo que o usuário realiza desde o primeiro até o último encontro com robô na realização da tarefa.
-> - O que está acontecendo com o ambiente quando o robô está interagindo com o usuário?
->   - Descreva o que acontece ou pode acontecer passo a passo
->   - Como a tarefa começa? Como a tarefa evolui? Como a tarefa termina?
-> - Enfatize todos os momentos em que acontece uma interação verbal, não-verbal e espacial.
+1. O usuário percebe que precisa de ajuda para pegar um objeto fora de alcance.
+2. O usuário chama o HYRO por voz, e o robô responde para indicar que está disponível *(verbal)*.
+3. O usuário solicita que o robô busque o objeto desejado. Se necessário, o HYRO faz perguntas para esclarecer a solicitação *(verbal)*.
+4. O robô confirma o pedido e se desloca pelo ambiente, desviando de móveis, pessoas e outros obstáculos *(espacial)*.
+5. Ao chegar ao objeto, o HYRO utiliza seus mecanismos de manipulação para pegá-lo, caso a tarefa seja compatível com suas capacidades *(espacial)*.
+6. O robô retorna até o usuário e informa verbalmente que trouxe o objeto, utilizando movimentos ou sinais visuais para indicar sua intenção *(verbal + não-verbal)*.
+7. O usuário recebe o objeto e confirma que a tarefa foi concluída. O HYRO permanece disponível para novas solicitações *(verbal)*.
+8. Em uma situação de emergência, o usuário poderá solicitar contato com um familiar ou serviço de assistência por meio de um comando específico. O robô confirma a solicitação e inicia o contato conforme as configurações autorizadas *(verbal)*.
 
-<details>
-<summary>📄</summary>
-
-1. Ana e o pai entram no saguão e ficam parados olhando ao redor, sem saber para onde ir.
-2. O Rumo percebe o grupo parado (sinal de "perdido") e se aproxima devagar, pela frente, mantendo distância social *(espacial)*.
-3. O robô pergunta "Posso ajudar vocês a encontrar algum curso ou laboratório?" e mostra um menu de ícones na tela *(verbal)*.
-4. Ana toca em "Engenharia de Robôs"; o robô confirma e começa a andar, olhando de tempos em tempos para trás para checar se o grupo o segue *(espacial + não-verbal)*.
-5. No corredor, o robô encontra duas pessoas conversando e contorna sem passar entre elas *(espacial)*.
-6. Ao chegar no laboratório, o robô se vira de frente para o grupo, inclina levemente a "cabeça" e deseja uma boa visita *(não-verbal)*.
-
-</details>
+Durante a interação, o ambiente poderá apresentar ruídos, circulação de pessoas e obstáculos inesperados. O HYRO deverá adaptar seu deslocamento, comunicar dificuldades e interromper a tarefa quando identificar condições inseguras.
 
 ## Análise de concorrência
 
-> 💡
-> - Pesquise robôs existentes atualmente que possam fazer a tarefa deste projeto.
-> - Selecione pelo menos 3 robôs diferentes que podem fazer essa tarefa.
-> - Em relação aos concorrentes, respondam as seguintes perguntas:
->   - Existe plataforma similar que atende o mesmo mercado e funcionalidades? Se sim: Quais os pontos positivos? Quais os pontos negativos?
->   - Existe plataforma diferente quanto ao serviço, mas que atenda esse mercado? Se sim: Quais os pontos positivos? Quais os pontos negativos?
->   - Quais plataformas sua equipe acha mais interessantes? Qual a justificativa?
+- **Amazon Astro:** robô doméstico móvel voltado à segurança residencial, monitoramento e interação com moradores. Seu ponto positivo é a navegação autônoma e a integração com recursos de casa inteligente. Como limitação, não foi projetado principalmente para manipular objetos e prestar assistência física a pessoas com mobilidade reduzida.
 
-<details>
-<summary>📄</summary>
+- **ElliQ:** robô assistivo voltado especialmente ao público idoso, com foco em companhia, conversação, lembretes e promoção do bem-estar. Seu diferencial é a interação social. Como limitação, não possui locomoção doméstica com rodas nem capacidade de buscar e transportar objetos.
 
-- **Totens interativos de informação** (comuns em aeroportos e shoppings) — bons para consultar informação estática, mas não guiam fisicamente o visitante até o destino.
-- **Aplicativo de mapa indoor do campus** — dispensa hardware físico, mas perde o acolhimento social que um robô oferece a um visitante inseguro.
-- **Pepper (SoftBank Robotics)**, usado em recepções comerciais — proposta muito parecida (recepcionar e guiar), mas é caro e não é sob medida para o layout da FEI.
+- **temi:** robô móvel com interação por voz, navegação autônoma e recursos de telepresença. Seus pontos positivos incluem mobilidade em ambientes internos e comunicação remota. Como limitação, sua configuração padrão não oferece a manipulação de objetos necessária para todas as tarefas propostas para o HYRO.
 
-A equipe considera o Pepper a referência mais próxima, mas acredita que um robô mais simples e barato (sem braços articulados) atende igualmente bem ao caso de uso do FEI Portas Abertas.
+### Comparação e justificativa
 
-</details>
+Existem soluções que atendem parcialmente às necessidades do HYRO, principalmente nas áreas de companhia, comunicação, navegação e segurança residencial. Entretanto, essas funcionalidades são frequentemente encontradas em plataformas distintas.
+
+A equipe considera especialmente interessantes o ElliQ, pela interação social e pelo foco no público idoso, e o temi, pela mobilidade e comunicação por voz. O HYRO busca combinar esses aspectos com uma estrutura humanoide e capacidade de manipulação de objetos, além de oferecer uma opção de contato de emergência.
+
+Como alternativa, aplicativos, assistentes virtuais e dispositivos de chamada de emergência podem atender a necessidades específicas com menor custo, mas não oferecem a mesma combinação de mobilidade física, manipulação e interação presencial proposta para o HYRO.
 
 ## Design do Robô
 
 ### Forma, função e affordances
 
-> 💡
-> - Pense nas características de affordances do seu robô. Que tipo de acessibilidades devem ser consideradas dentro do seu projeto?
-> - A aparência e o comportamento do robô **casam com a função**? Que affordances a forma sinaliza (olhos → enxergar, braços → pegar objetos, tela → interagir por toque)?
-> - Discuta o papel das expectativas do usuário no projeto de um robô. Onde faz sentido "**prometer menos e entregar mais**" (underpromise, overdeliver)?
+O HYRO possui uma estrutura humanoide, com cabeça, tronco, braços e pernas com rodas nas extremidades. Sua forma deve comunicar claramente suas funções: os braços indicam a capacidade de pegar objetos, a cabeça representa a percepção do ambiente e a comunicação por voz permite solicitar tarefas sem depender de telas ou controles físicos.
 
-<details>
-<summary>📄</summary>
+A acessibilidade será considerada por meio de comandos simples, fala clara, volume ajustável e tempo suficiente para o usuário responder. O robô deverá sinalizar suas intenções por voz e movimentos, além de permitir a interrupção de tarefas.
 
-O Rumo tem uma tela no "peito" (affordance de toque), uma "cabeça" com dois pontos luminosos (olhos) que sinalizam para onde está olhando, e **não** tem braços — o que sinaliza corretamente que ele não manipula objetos, apenas informa e guia. Para "prometer menos, entregar mais", o robô nunca é chamado de "assistente inteligente" nos materiais do evento, apenas de "guia do FEI Portas Abertas", evitando a expectativa de uma conversa livre e aberta.
-
-</details>
+Para seguir o princípio de "prometer menos e entregar mais", o HYRO deverá informar suas capacidades e limitações de forma transparente, sem sugerir que consegue realizar tarefas que não foram implementadas ou testadas.
 
 ### Grau de antropomorfismo
 
-> 💡
-> - O seu robô tem um padrão com mais ou menos características antropomórficas (androide, humanoide, zoomórfico, minimalista, robject)? Marquem um ponto no espectro máquina ↔ humano e justifiquem.
-> - Qual padrão é mais aceito pela sociedade dentro do projeto que você está desenvolvendo?
-> - Como o grupo pretende evitar o **vale da estranheza** (uncanny valley), caso o robô tenha um design muito próximo do humano?
+O HYRO será posicionado entre os padrões **minimalista e humanoide** no espectro máquina-humano. A presença de cabeça, tronco e braços facilita a compreensão de suas funções e pode tornar a interação mais natural, enquanto as rodas reforçam sua identidade robótica.
 
-<details>
-<summary>📄</summary>
-
-O Rumo fica próximo do polo **minimalista** do espectro, com leve antropomorfismo (olhos, "cabeça" que gira), sem rosto detalhado nem fala emocional complexa — parecido com o Keepon citado na aula de Design. Justificativa: um design fortemente humano geraria expectativa de conversa fluida, que o robô não tem; pouco antropomorfismo, por outro lado, dificultaria que visitantes se sintam à vontade para abordá-lo. Por ficar longe do polo humano, o risco de vale da estranheza é baixo.
-
-</details>
+O design deverá priorizar uma aparência amigável, sem tentar reproduzir perfeitamente um ser humano. Um rosto simplificado, expressões visuais discretas e movimentos previsíveis ajudam a evitar o vale da estranheza e reduzem expectativas irreais sobre suas capacidades sociais.
 
 ### Padrões de design
 
-> 💡
-> Identifique **2 padrões de design** (design patterns) aplicáveis ao seu projeto e explique como eles se **combinam**.
+**1. Apresentação inicial:** o HYRO cumprimenta o usuário, identifica-se e informa brevemente como pode ajudar, permitindo que a pessoa compreenda suas funcionalidades.
 
-<details>
-<summary>📄</summary>
+**2. Confirmação e feedback:** antes de executar comandos ambíguos ou ações relevantes, o robô confirma a solicitação. Durante a tarefa, informa seu progresso e comunica quando a conclui ou encontra dificuldades.
 
-**"Apresentação inicial"** (o robô se apresenta brevemente antes de perguntar o destino) + **"em movimento junto"** (anda ao lado/à frente do grupo, ajustando o ritmo ao visitante mais lento) — combinados, formam o padrão composto de "robô guia turístico".
-
-</details>
+A combinação desses padrões torna a interação mais previsível e acessível, reduzindo erros de interpretação e aumentando a confiança do usuário no sistema.
 
 ### Valores e ética
 
-> 💡
-> - Aplicando o **Value-Sensitive Design (VSD)** — a tecnologia deve se adaptar às necessidades humanas, não o contrário — identifique **1 a 2 valores** em jogo no seu projeto (privacidade, autonomia, segurança, inclusão, etc.).
-> - Identifique **1 risco ético** do seu robô e como o grupo pretende mitigá-lo.
+**Valores:**
 
-<details>
-<summary>📄</summary>
+- **Autonomia e acessibilidade:** permitir que pessoas com diferentes capacidades físicas interajam com o robô e realizem solicitações sem depender de interfaces complexas.
+- **Segurança e privacidade:** proteger o usuário durante a movimentação e manipulação de objetos, respeitando seus dados pessoais e sua autorização para contatos de emergência.
 
-**Valores:** acessibilidade (o robô deve ajustar a velocidade para visitantes com mobilidade reduzida) e privacidade (não deve gravar ou reconhecer rostos sem consentimento).
+**Risco ético:** o usuário pode confiar excessivamente no HYRO e acreditar que ele garante assistência em qualquer emergência.
 
-**Risco ético:** o robô poderia, sem querer, direcionar mais visitantes para cursos "badalados", reduzindo a visibilidade de cursos menos procurados. **Mitigação:** o menu de destinos sempre mostra todos os cursos na mesma ordem e tamanho, sem personalização por popularidade.
-
-</details>
+**Mitigação:** informar claramente as limitações do sistema, solicitar confirmação antes de acionar contatos quando possível e comunicar se uma chamada não puder ser realizada. O HYRO deverá ser apresentado como um recurso complementar de assistência, e não como substituto de cuidadores ou serviços de emergência.
 
 ### Protótipo no papel
 
