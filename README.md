@@ -1,48 +1,31 @@
-> [!IMPORTANT]
-> Cada seção tem dois tipos de bloco de apoio, que **devem ser apagados** antes da entrega final — o README entregue deve conter só o texto do grupo:
-> - **💡 (Dica)** — o que escrever nessa seção, com base nas aulas de IHR.
-> - **📄 (Exemplo)** — um exemplo preenchido, de um robô fictício ("Rumo", robô guia da FEI para o FEI Portas Abertas), só para ilustrar o **nível de detalhe e o formato** esperados.
 
-
-# **<Nome do Robô>:** <Aplicação do robô>
+# **HYRO — Robô Híbrido para Assistência Doméstica**
 
 Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interação Humano-Robô (IHR) (CCR230) do curso de Engenharia de Robôs, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
 
 ## Componentes do Grupo
 
-> 💡 Adicione os nomes e RAs dos integrantes
-> - Nome - RA
-> - Nome - RA
-> - Nome - RA
+> - Rafaela Botter - 11.122.066-1
+> - Letícia Galante - 11.122.071-1
+> - Joaquim Jonkel -
+> - Rafael Vale -
+
 
 ## Resumo
 
-> 💡
-> Apresente uma breve descrição do seu robô e sua aplicação (tarefa que ele irá resolver).
+> O HYRO é um robô de assistência doméstica com estrutura humanoide e rodas nas extremidades das pernas, projetado para auxiliar pessoas com dificuldades na realização de atividades cotidianas, especialmente idosos e pessoas com mobilidade reduzida. Seu diferencial está na combinação de mobilidade, interação por voz e assistência personalizada, permitindo buscar e transportar objetos, oferecer companhia por meio de conversas e disponibilizar uma função de contato de emergência para acionar familiares ou serviços de assistência quando necessário. O HYRO busca proporcionar maior autonomia, segurança e conforto aos usuários, tornando o ambiente doméstico mais acessível e promovendo uma interação intuitiva e acolhedora entre humanos e robôs.
 
-<details>
-<summary>📄</summary>
 
-O Rumo é um robô recepcionista para o FEI Portas Abertas. Ele acolhe os visitantes no saguão de entrada, apresenta rapidamente os cursos oferecidos e guia grupos até o laboratório de interesse, reduzindo a fila de espera por monitores humanos nos horários de pico.
-
-</details>
 
 ## Introdução
 
-> 💡
-> - Apresente uma contextualização para o problema que o seu robô irá resolver e por quê esse tipo de robô é necessário hoje na sociedade.
-> - Apresente uma breve descrição do seu robô e sua aplicação (tarefa que ele irá resolver).
-> - Em uma única frase, resuma o objetivo do seu robô.
-> - Que tipo de experiência o robô deve proporcionar para os usuários?
+Idosos e pessoas com mobilidade reduzida podem enfrentar dificuldades em tarefas cotidianas, além de situações de isolamento e dificuldade para pedir ajuda em emergências. Nesse contexto, a robótica assistiva pode contribuir para melhorar a autonomia, a segurança e a qualidade de vida dessas pessoas.
 
-<details>
-<summary>📄</summary>
+O HYRO é um robô de assistência doméstica com estrutura humanoide e rodas nas extremidades das pernas. Por meio de comandos de voz, ele poderá auxiliar na busca e no transporte de objetos, oferecer companhia e facilitar o contato de emergência com familiares ou serviços de assistência.
 
-Todo ano a FEI recebe centenas de visitantes no FEI Portas Abertas, mas há poucos monitores voluntários disponíveis nos horários de pico — visitantes ficam perdidos no saguão ou esperando muito tempo por orientação. O Rumo é um robô móvel com tela e um braço apontador que recebe visitantes na portaria, apresenta um menu de destinos (curso, laboratório, auditório) e os guia até lá, verificando se o grupo continua acompanhando.
 
-**Objetivo em uma frase:** ajudar visitantes do FEI Portas Abertas a encontrar, sem depender de um monitor humano, o curso e o laboratório que querem conhecer.
-
-**Experiência desejada:** acolhedora, confiável e levemente lúdica — sem intimidar quem nunca interagiu com um robô antes.
+**Objetivo em uma frase:** promover autonomia, segurança e bem-estar no ambiente doméstico.
+**Experiência desejada:** simples, acolhedora e segura, proporcionando uma interação natural e acessível.
 
 </details>
 
