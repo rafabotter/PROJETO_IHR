@@ -173,122 +173,71 @@ O design prioriza uma aparência amigável, movimentos previsíveis e interfaces
 
 As dimensões, os mecanismos de locomoção e a capacidade de manipulação serão definidos conforme a evolução do projeto.
 
-<img alt="Protótipo do HYRO - V1" src="esboçohyro.png" height="380"/>
+<img alt="Protótipo do HYRO - V1" src="esboçohyro.png" height="500"/>
 
 ## Ações do robô
 
-> 💡
-> Para cada ação:
-> - Descreva a ação.
-> - Determine os pré-requisitos para que a ação aconteça
-> - Determine o que se espera que seja modificado no ambiente quando a ação é finalizada
+**Buscar e entregar objetos** — pré-requisitos: comando de voz compreendido, objeto identificado, caminho acessível e capacidade de manipulação disponível. Ao finalizar: o objeto é entregue ao usuário. Caso não consiga pegá-lo, o HYRO informa a limitação.
 
-<details>
-<summary>📄</summary>
+**Oferecer companhia** — pré-requisitos: usuário inicia uma conversa ou solicita interação, com o sistema de voz disponível. Ao finalizar: o usuário recebe uma resposta ou pode encerrar a conversa quando desejar.
 
-**Guiar até o destino** — pré-requisito: destino escolhido no menu e caminho livre conhecido no mapa do dia. Ao finalizar: o visitante está fisicamente no laboratório e o robô retorna à posição de espera no saguão.
+**Acionar contato de emergência** — pré-requisitos: solicitação do usuário, contato previamente cadastrado e conexão disponível. Ao finalizar: a tentativa de contato é realizada e seu resultado é informado ao usuário.
 
-**Dar informação rápida** — pré-requisito: pergunta reconhecida dentro do conjunto de perguntas frequentes cadastradas. Ao finalizar: a resposta foi falada e também exibida na tela.
-
-</details>
+**Fornecer lembretes** — pré-requisitos: lembrete previamente configurado e horário atingido. Ao finalizar: o usuário recebe o aviso por voz e, se disponível, pela tela.
 
 ## Interações do robô
 
 ### Espacial
 
-> 💡
-> - Descreva **onde** o robô se posiciona em relação ao usuário (distância e orientação do corpo), usando as **zonas de proxêmica** (Hall) e as **F-formations**.
-> - Como o robô **inicia** a interação (direção de aproximação) e como **sinaliza** para onde vai?
-> - Para cada interação espacial:
->   - Descreva a interação.
->   - Determine os pré-requisitos para que a interação aconteça.
->   - Determine a resposta emocional esperada do usuário quando a interação é finalizada.
-> - O que o robô faz ao encontrar pessoas **paradas, em conversa ou em grupo**, e ao passar por elas num corredor (sem cruzar entre pessoas conversando)?
-> - Proponha **um ajuste** desse comportamento espacial para um contexto de uso diferente do principal.
-
-<details>
-<summary>📄</summary>
-
-- **Posicionamento:** aborda o grupo a uma distância social (2–3 m), sempre pela frente, nunca por trás.
-- **Início da aproximação:** aproxima-se em diagonal (nunca em linha reta "contra" a pessoa), reduzindo a velocidade a 1,5 m de distância.
-- **Sinalização de destino:** gira a "cabeça" na direção do laboratório antes de começar a andar.
-- **Grupos e corredores:** ao encontrar duas pessoas conversando, contorna por trás delas, sem passar entre as duas; para grupos maiores, aguarda uma abertura natural na formação.
-- **Ajuste de contexto:** em dias normais de aula (sem evento), o robô aumenta a distância de abordagem, já que há menos ruído social e mais espaço livre no saguão.
-
-</details>
+- **Posicionamento:** o HYRO mantém distância suficiente para não invadir o espaço pessoal, aproximando-se somente quando necessário para entregar objetos.
+- **Início da interação:** aproxima-se lentamente, preferencialmente pela frente ou por uma direção visível ao usuário, e sinaliza sua intenção por voz ou movimento.
+- **Entrega de objetos:** posiciona-se próximo o suficiente para que o usuário alcance o objeto com conforto, sem bloquear passagens.
+- **Pessoas e obstáculos:** desvia de pessoas e móveis, evita passar entre indivíduos que estejam conversando e aguarda quando não há espaço seguro para prosseguir.
+- **Pré-requisitos:** sensores de proximidade funcionais, espaço de circulação suficiente e rota segura.
+- **Resposta emocional esperada:** conforto, segurança e confiança.
+- **Adaptação de contexto:** em ambientes estreitos ou compartilhados, reduz a velocidade, aumenta a cautela e solicita orientação quando não consegue passar com segurança.
 
 ### Verbal
 
-> 💡
-> - A interação verbal do robô será **restrita** (comandos, FSM) ou **aberta** (LLM/chatbot)? Justifique a escolha.
-> - Para cada interação verbal:
->   - Descreva a interação.
->   - Determine os pré-requisitos para que a interação aconteça.
->   - Determine a resposta emocional esperada do usuário quando a interação é finalizada.
-> - Como o robô lida com o **timing** das respostas (silêncio, marcadores conversacionais como "uh-huh")?
-> - Que tipo de voz (TTS) o robô usa, e por que ela **combina** com a aparência e o propósito dele?
-> - Identifique **uma limitação** do reconhecimento de fala (ruído, sotaque, vocabulário) que afetaria o seu cenário de uso, e como mitigá-la.
+**Tipo de interação:** restrita, baseada em comandos e fluxos de diálogo definidos. Essa abordagem facilita o controle de tarefas, reduz respostas imprevisíveis e favorece a segurança. A companhia poderá utilizar um conjunto limitado de conversas e respostas.
 
-<details>
-<summary>📄</summary>
+**Interações previstas:**
 
-**Restrita** — usa uma árvore de diálogo (FSM) com um conjunto fechado de destinos e perguntas frequentes, pois o saguão é ruidoso e o vocabulário esperado é previsível; mais confiável do que abrir para um LLM.
+- **Solicitação de tarefa:** o usuário pede que o HYRO busque um objeto. O robô confirma o pedido quando necessário e informa o resultado.
+- **Conversa e companhia:** o usuário inicia uma conversa e o robô responde dentro de suas capacidades.
+- **Contato de emergência:** o usuário solicita ajuda e o robô confirma o acionamento, quando possível.
+- **Pré-requisitos:** microfone funcional, reconhecimento de fala disponível e comando compreensível.
+- **Resposta emocional esperada:** acolhimento, clareza e confiança.
 
-**Timing:** ao processar um pedido, o robô emite um "hum" sonoro curto e pisca os olhos em sequência, evitando silêncio constrangedor.
+**Timing:** o HYRO deve responder em tempo adequado, sinalizando que está processando a solicitação. Se não compreender o comando, pede que o usuário repita ou reformule, sem permanecer em silêncio.
 
-**Voz:** TTS de tom jovem e neutro, volume ajustável ao ruído do saguão — combina com o porte pequeno do robô (uma voz grave soaria estranha).
+**Voz:** voz sintetizada clara, natural e acolhedora, com volume ajustável. A fala deve ser pausada o suficiente para facilitar a compreensão por pessoas com diferentes necessidades.
 
-**Limitação do ASR:** o ruído do evento atrapalha o reconhecimento de nomes de professores e disciplinas. **Mitigação:** escolhas críticas (curso, laboratório) são feitas por toque na tela; o reconhecimento de fala só é usado para perguntas simples de sim/não.
-
-</details>
+**Limitação do reconhecimento de fala:** ruídos domésticos, sotaques e dificuldades de articulação podem prejudicar a compreensão. Como mitigação, o robô poderá pedir confirmação, repetir o que entendeu e oferecer alternativas por tela ou botão físico.
 
 ### Não-verbal
 
-> 💡
-> - Escolha **dois canais** não verbais (olhar, gesto, toque, postura, ritmo, imitação) e descreva como o robô os usaria.
-> - Para cada interação não-verbal:
->   - Descreva a interação.
->   - Determine os pré-requisitos para que a interação aconteça.
->   - Determine a resposta emocional esperada do usuário quando a interação é finalizada.
-> - Explique como o robô **perceberia** as pistas não verbais correspondentes da pessoa.
-> - Descreva um caso em que a **falta de coordenação** entre fala e comportamento não verbal quebraria a interação.
-> - Proponha **uma pista não verbal exclusiva** do robô (sem equivalente humano direto) que ajudaria na comunicação.
+**Canais escolhidos: olhar e sinalização luminosa.**
 
-<details>
-<summary>📄</summary>
+- **Olhar:** os olhos visuais do HYRO direcionam-se ao usuário durante a conversa e à tarefa durante a execução, indicando atenção ou intenção de movimento.
+- **Sinalização luminosa:** luzes indicam estados como aguardando comando, executando tarefa, apresentando dificuldade ou acionando contato de emergência.
+- **Pré-requisitos:** sensores e indicadores visuais funcionais, além de um sistema de controle capaz de associar cada estado à sinalização correspondente.
+- **Resposta emocional esperada:** maior compreensão do comportamento do robô e sensação de segurança.
 
-**Canais escolhidos: olhar e postura.**
-- **Olhar:** os "olhos" de LED giram na direção de quem está falando com o robô e na direção da rota a seguir.
-- **Postura:** o corpo se inclina levemente para frente ao iniciar a aproximação (convite) e se afasta/gira de lado ao encerrar a interação (despedida).
+**Percepção das pistas do usuário:** o HYRO poderá utilizar microfone e sensores de proximidade para detectar quando alguém fala com ele ou se aproxima. Câmeras poderão ser consideradas futuramente, respeitando consentimento e privacidade.
 
-**Percepção:** uma câmera de profundidade detecta se a pessoa está olhando para o robô (atenção) e se está parada olhando ao redor (sinal de estar perdida).
+**Falta de coordenação:** se o robô disser que vai entregar um objeto, mas se afastar ou indicar uma direção contraditória, o usuário poderá ficar confuso e perder a confiança.
 
-**Falta de coordenação:** se o robô disser "vamos ao laboratório de robótica" mas girar para o lado errado, o grupo hesita e para de segui-lo — a confiança se quebra.
-
-**Pista exclusiva do robô:** um anel de luz na base pisca em verde quando o robô está confiante do caminho e em amarelo quando está recalculando a rota — sem equivalente humano direto, mas comunica incerteza de forma clara.
-
-</details>
+**Pista exclusiva do robô:** um anel luminoso poderá indicar o estado da tarefa: azul para aguardando comando, verde para tarefa concluída e amarelo para necessidade de esclarecimento. Uma sinalização vermelha poderá indicar uma situação de emergência, sem substituir alertas sonoros quando necessários.
 
 ## Emoção
 
-> 💡
-> - Escolha um **modelo de emoção** (categorias básicas de Ekman, modelo OCC ou modelo dimensional — Russell ou PAD) e justifique a escolha para o seu caso de uso.
-> - Descreva **como** o robô perceberia o estado emocional do usuário, e por quais canais (rosto, voz, postura, outro).
-> - Defina **quando** o robô deve mimetizar a emoção da pessoa e **quando não deve** (lembre-se da exceção da raiva — retribuir raiva raramente ajuda a resolver o conflito).
-> - Identifique um risco de **gerenciamento de expectativas**: se o robô parece emocionalmente responsivo, que outras capacidades sociais o usuário passa a esperar dele? O robô consegue cumprir essa expectativa?
+**Modelo escolhido:** modelo dimensional de Russell, que organiza estados afetivos em dimensões de valência (agradável ou desagradável) e ativação (baixa ou alta). Ele permite orientar respostas mais calmas ou mais enérgicas sem exigir que o robô identifique emoções específicas com precisão.
 
-<details>
-<summary>📄</summary>
+**Percepção emocional:** o HYRO poderá considerar características da fala, como volume e ritmo, além de comandos explícitos do usuário. Esses sinais não permitem determinar com certeza o estado emocional de uma pessoa, portanto o robô deve evitar conclusões definitivas.
 
-**Modelo:** categorias básicas de Ekman (feliz, surpreso, neutro) — simples o suficiente para expressar por luzes e tom de voz, sem exigir um rosto detalhado.
+**Adaptação de comportamento:** diante de sinais de desconforto, o HYRO mantém a voz calma, fala de forma clara e oferece ajuda. Não deve imitar raiva, elevar o tom de voz ou insistir em uma interação que o usuário deseja encerrar.
 
-**Percepção:** o robô reconhece tom de voz alterado (frustração) pelo microfone e expressões faciais básicas pela câmera, para saber se o visitante está confuso ou satisfeito.
-
-**Mimetismo:** mimetiza entusiasmo — se o visitante se anima ao ver o laboratório de robótica, o robô "sorri" com as luzes — mas **nunca** mimetiza a impaciência de um visitante apressado; nesse caso mantém tom calmo e oferece um caminho mais curto.
-
-**Risco de expectativa:** se o robô demonstra "empolgação", visitantes podem esperar que ele converse sobre assuntos abertos (ex.: "e as notas de corte?"). O robô precisa deixar claro, de forma simpática, quando um assunto está fora do seu escopo.
-
-</details>
-
----                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+**Risco de expectativa:** uma comunicação acolhedora pode levar o usuário a acreditar que o robô compreende sentimentos e situações complexas como uma pessoa. Para reduzir esse risco, o HYRO deve deixar claras suas limitações e, quando não puder ajudar, orientar o usuário a procurar um familiar, cuidador ou serviço apropriado.      
+__________________________________________________________________________________________________________________________________________________ __ __ _
 [^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
