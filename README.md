@@ -61,7 +61,7 @@ Essas informações devem ser fornecidas ou autorizadas pelo usuário, respeitan
 
 ### Mapa de empatia
 
-![Mapa de empatia](
+![Mapa de empatia](empatiamaria.png)
 
 
 <details>
@@ -75,6 +75,9 @@ Essas informações devem ser fornecidas ou autorizadas pelo usuário, respeitan
 - **Ganhos:** maior autonomia, praticidade, companhia e facilidade para contatar familiares.
 
 </details>
+
+![Mapa de empatia](empatiajoão.png)
+
 
 <details>
 <summary>📄 Persona secundária: João, 45 anos</summary>
