@@ -7,8 +7,8 @@ Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário 
 
 > - Rafaela Botter - 11.122.066-1
 > - Letícia Galante - 11.122.071-1
-> - Joaquim Jonkel -
-> - Rafael Vale -
+> - Joaquim Jonkel - 11.122.236-0
+> - Rafael Vale - 11.122.208-9
 
 
 ## Resumo
