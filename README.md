@@ -64,30 +64,33 @@ Mapas de empatia[^1] da persona primária (Maria) e da persona secundária (Joã
 
 
 <details>
+<details>
 <summary>📄 Persona primária: Maria, 72 anos</summary>
 
-- **Vê:** objetos fora de alcance, móveis e ambientes domésticos que exigem deslocamento.
-- **Ouve:** sons da casa, televisão e orientações do HYRO por voz.
-- **Diz e faz:** pede para o HYRO buscar objetos, conversa com ele e utiliza a função de contato de emergência quando necessário.
-- **Pensa e sente:** deseja manter sua independência, sentir-se segura e ter companhia no dia a dia.
-- **Dores:** dificuldade de locomoção, necessidade de ajuda em tarefas simples e receio de não conseguir pedir ajuda em uma emergência.
-- **Ganhos:** maior autonomia, praticidade, companhia e facilidade para contatar familiares.
+- **Vê:** objetos fora de alcance, móveis e obstáculos pela casa e tarefas que exigem esforço físico.
+- **Ouve:** televisão, conversas com familiares, orientações de cuidadores e notícias sobre saúde e segurança.
+- **Diz e faz:** realiza tarefas domésticas com dificuldade, pede ajuda a familiares quando necessário e mantém contato com a família por telefone.
+- **Pensa e sente:** deseja manter sua independência, sentir-se segura em casa e ter companhia no dia a dia.
+- **Dores:** dificuldade de locomoção, dependência de outras pessoas para tarefas simples, solidão e medo de não conseguir pedir ajuda em uma emergência.
+- **Ganhos:** maior autonomia, facilidade para realizar atividades cotidianas, companhia, segurança e tranquilidade.
 
 </details>
 
-![Mapa de empatia](empatiajoão.png)
-
+![Mapa de empatia](mapaempatiamaria.png)
 
 <details>
 <summary>📄 Persona secundária: João, 45 anos</summary>
 
-- **Vê:** a rotina da mãe, suas dificuldades diárias e o HYRO auxiliando nas tarefas domésticas.
-- **Ouve:** relatos da mãe sobre o robô e recebe contatos quando ela precisa de ajuda.
-- **Diz e faz:** configura os contatos de emergência, ajuda na adaptação ao robô e verifica se ele atende às necessidades da mãe.
-- **Pensa e sente:** preocupa-se com a segurança e o bem-estar da mãe e busca soluções confiáveis para ajudá-la mesmo quando está ausente.
-- **Dores:** dificuldade de estar presente o tempo todo e preocupação com possíveis emergências.
-- **Ganhos:** maior tranquilidade, apoio à rotina da mãe e facilidade de comunicação em situações que exigem assistência.
+- **Vê:** as dificuldades da mãe na rotina doméstica, os riscos presentes no ambiente e a necessidade de apoio nas atividades diárias.
+- **Ouve:** relatos da mãe sobre suas dificuldades, preocupações de familiares e orientações de profissionais de saúde.
+- **Diz e faz:** conversa com a mãe sobre suas necessidades, organiza visitas, acompanha sua rotina quando possível e pesquisa alternativas para melhorar sua qualidade de vida.
+- **Pensa e sente:** preocupa-se com a segurança e o bem-estar da mãe, deseja que ela mantenha sua independência e sente dificuldade por não conseguir estar sempre presente.
+- **Dores:** falta de tempo para acompanhar a mãe, preocupação com quedas e emergências e dificuldade de encontrar soluções confiáveis e acessíveis.
+- **Ganhos:** tranquilidade em relação à segurança da mãe, maior autonomia para ela e mais facilidade para acompanhar seu bem-estar mesmo à distância.
 
+</details>
+
+![Mapa de empatia](mapaempatiajoao.png)
 </details>
 
 ## Contexto de uso
