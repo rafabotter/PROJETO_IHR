@@ -58,13 +58,6 @@ Essas informações devem ser fornecidas ou autorizadas pelo usuário, respeitan
 
 ### Mapa de empatia
 
-
-
-![Mapa de empatia](empatiamaria.png)
-
-
-<details>
-<details>
 <summary>📄 Persona primária: Maria, 72 anos</summary>
 
 - **Vê:** objetos fora de alcance, móveis e obstáculos pela casa e tarefas que exigem esforço físico.
