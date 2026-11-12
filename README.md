@@ -58,7 +58,7 @@ Essas informações devem ser fornecidas ou autorizadas pelo usuário, respeitan
 
 ### Mapa de empatia
 
-Mapas de empatia[^1] da persona primária (Maria) e da persona secundária (João):
+
 
 ![Mapa de empatia](empatiamaria.png)
 
